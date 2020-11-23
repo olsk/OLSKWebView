@@ -30,6 +30,10 @@ describe('OLSKWebView_Misc', function () {
 			browser.assert.attribute(OLSKWebViewFrame, 'src', OLSKWebViewURL);
 		});
 
+		it('sets frameborder', function () {
+			browser.assert.attribute(OLSKWebViewFrame, 'frameborder', '0');
+		});
+
 	});
 
 	describe('OLSKWebViewWindowButton', function test_OLSKWebViewWindowButton () {

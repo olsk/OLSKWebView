@@ -27,7 +27,7 @@ import OLSKModalView from 'OLSKModalView';
 
 <OLSKModalView bind:this={ mod._OLSKModalView } OLSKModalViewTitleText={ OLSKModalViewTitleText }>
 	<div class="OLSKWebView">
-		<iframe class="OLSKWebViewFrame" data-src={ DEBUG_OLSKWebViewDataSource ? OLSKWebViewURL : '' } src={ DEBUG_OLSKWebViewDataSource ? '' : OLSKWebViewURL }></iframe>
+		<iframe class="OLSKWebViewFrame" data-src={ DEBUG_OLSKWebViewDataSource ? OLSKWebViewURL : '' } src={ DEBUG_OLSKWebViewDataSource ? '' : OLSKWebViewURL } frameborder="0"></iframe>
 	</div>
 
 	<div slot="OLSKStandardViewTail">
