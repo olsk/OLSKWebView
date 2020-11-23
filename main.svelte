@@ -47,6 +47,10 @@ import OLSKModalView from 'OLSKModalView';
 	flex-direction: column;
 }
 
+.OLSKWebViewTail {
+	min-height: unset !important;
+}
+
 .OLSKWebViewWindowButton {
 	display: block;
 	padding: 5px;
