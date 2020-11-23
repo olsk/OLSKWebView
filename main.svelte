@@ -38,4 +38,8 @@ import OLSKModalView from 'OLSKModalView';
 </OLSKModalView>
 
 <style>
+.OLSKWebViewFrame {
+	width: 100%;
+	height: 100%;
+}
 </style>
