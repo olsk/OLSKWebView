@@ -5,7 +5,8 @@ Object.entries({
 	
 	OLSKWebViewFrame: '.OLSKStandardViewBody .OLSKWebViewFrame',
 	
-	OLSKWebViewWindowButton: '.OLSKStandardViewTail .OLSKWebViewWindowButton',
+	OLSKWebViewTail: '.OLSKStandardViewTail .OLSKWebViewTail',
+	OLSKWebViewWindowButton: '.OLSKWebViewTail .OLSKWebViewWindowButton',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
@@ -36,6 +37,10 @@ describe('OLSKWebView_Access', function () {
 
 		it('shows OLSKWebViewFrame', function () {
 			browser.assert.elements(OLSKWebViewFrame, 1);
+		});
+
+		it('shows OLSKWebViewTail', function () {
+			browser.assert.elements(OLSKWebViewTail, 1);
 		});
 
 		it('shows OLSKWebViewWindowButton', function () {
