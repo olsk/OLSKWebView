@@ -1,0 +1,7 @@
+{
+  "name": "OLSKWebView",
+  "main": "main.svelte",
+  "dependencies": {
+    "OLSKModalView": "olsk/OLSKModalView"
+  }
+}
