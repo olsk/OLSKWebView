@@ -1,6 +1,7 @@
 <script>
 export let OLSKModalViewTitleText;
 export let OLSKWebViewURL;
+export let DEBUG_OLSKWebViewDataSource = false;
 
 export const modPublic = {};
 
@@ -26,7 +27,7 @@ import OLSKModalView from 'OLSKModalView';
 
 <OLSKModalView bind:this={ mod._OLSKModalView } OLSKModalViewTitleText={ OLSKModalViewTitleText }>
 	<div class="OLSKWebView">
-		<iframe class="OLSKWebViewFrame" src={ OLSKWebViewURL }></iframe>
+		<iframe class="OLSKWebViewFrame" data-src={ DEBUG_OLSKWebViewDataSource ? OLSKWebViewURL : '' } src={ DEBUG_OLSKWebViewDataSource ? '' : OLSKWebViewURL }></iframe>
 	</div>
 
 	<div slot="OLSKStandardViewTail">
