@@ -42,4 +42,13 @@ import OLSKModalView from 'OLSKModalView';
 	width: 100%;
 	height: 100%;
 }
+
+.OLSKWebViewTail {
+	flex-direction: column;
+}
+
+.OLSKWebViewWindowButton {
+	display: block;
+	padding: 5px;
+}
 </style>
