@@ -1,0 +1,24 @@
+<%
+locals.OLSKPageAssets = [
+	'__compiled/ui-style.css',
+];
+locals.OLSKPagePublicConstants = {
+	OLSKSharedPageCurrentLanguage,
+};
+%>
+
+<script src="/<%= OLSKSharedPageControllerSlug %>/__compiled/ui-behaviour.js"></script>
+
+<script>
+window._OLSKWebView = new OLSKWebView({
+	target: document.body,
+	props: Object.assign({
+		OLSKModalViewTitleText: Math.random().toString(),
+		OLSKWebViewURL: '/alfa',
+	}, Object.fromEntries(Array.from((new window.URLSearchParams(window.location.search)).entries()))),
+});
+</script>
+
+<button id="TestOLSKModalViewShow" onclick="_OLSKWebView.modPublic.OLSKModalViewShow()">TestOLSKModalViewShow</button>
+
+<button id="TestOLSKModalViewClose" onclick="_OLSKWebView.modPublic.OLSKModalViewClose()">TestOLSKModalViewClose</button>
