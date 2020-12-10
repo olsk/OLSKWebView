@@ -46,8 +46,8 @@ describe('OLSKWebView_Misc', function () {
 			browser.assert.hasClass(OLSKWebViewTail, 'OLSKToolbar');
 		});
 
-		it('classes OLSKToolbarBorderTop', function () {
-			browser.assert.hasClass(OLSKWebViewTail, 'OLSKToolbarBorderTop');
+		it('classes OLSKCommonEdgeTop', function () {
+			browser.assert.hasClass(OLSKWebViewTail, 'OLSKCommonEdgeTop');
 		});
 
 	});

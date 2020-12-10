@@ -30,7 +30,7 @@ import OLSKModalView from 'OLSKModalView';
 		<iframe class="OLSKWebViewFrame" data-src={ DEBUG_OLSKWebViewDataSource ? OLSKWebViewURL : '' } src={ DEBUG_OLSKWebViewDataSource ? '' : OLSKWebViewURL } title={ OLSKModalViewTitleText } frameborder="0"></iframe>
 	</div>
 
-	<div class="OLSKWebViewTail OLSKToolbar OLSKToolbarBorderTop" slot="OLSKStandardViewTail">
+	<div class="OLSKWebViewTail OLSKToolbar OLSKCommonEdgeTop" slot="OLSKStandardViewTail">
 		<div class="OLSKToolbarElementGroup">
 			<a class="OLSKWebViewWindowButton" href={ OLSKWebViewURL } target="_blank">{ OLSKLocalized('OLSKWebViewWindowButtonText') }</a>
 		</div>
