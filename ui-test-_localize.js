@@ -6,7 +6,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		return OLSKTestingLocalized(inputData, OLSKRoutingLanguage);
 	};
 
-	describe(`OLSKWebView_Localize-${ OLSKRoutingLanguage }`, function () {
+	describe('OLSKWebView_Localize-' + OLSKRoutingLanguage, function () {
 
 		before(function() {
 			return browser.OLSKVisit(kDefaultRoute, {
