@@ -8,7 +8,7 @@ Object.entries({
 	OLSKWebViewTail: '.OLSKStandardViewTail .OLSKWebViewTail',
 	OLSKWebViewWindowButton: '.OLSKWebViewTail .OLSKWebViewWindowButton',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKWebView_Access', function () {
