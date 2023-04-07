@@ -19,7 +19,7 @@ describe('OLSKWebView_Misc', function () {
 	describe('OLSKModalViewTitle', function test_OLSKModalViewTitle () {
 
 		it('binds OLSKModalViewTitleText', function () {
-			browser.assert.text('.OLSKModalViewTitle', OLSKModalViewTitleText);
+			return browser.assert.text('.OLSKModalViewTitle', OLSKModalViewTitleText);
 		});
 
 	});
@@ -27,15 +27,15 @@ describe('OLSKWebView_Misc', function () {
 	describe('OLSKWebViewFrame', function test_OLSKWebViewFrame () {
 
 		it('sets src', function () {
-			browser.assert.attribute(OLSKWebViewFrame, 'src', OLSKWebViewURL);
+			return browser.assert.attribute(OLSKWebViewFrame, 'src', OLSKWebViewURL);
 		});
 
 		it('sets title', function () {
-			browser.assert.attribute(OLSKWebViewFrame, 'title', OLSKModalViewTitleText);
+			return browser.assert.attribute(OLSKWebViewFrame, 'title', OLSKModalViewTitleText);
 		});
 
 		it('sets frameborder', function () {
-			browser.assert.attribute(OLSKWebViewFrame, 'frameborder', '0');
+			return browser.assert.attribute(OLSKWebViewFrame, 'frameborder', '0');
 		});
 
 	});
@@ -43,11 +43,11 @@ describe('OLSKWebView_Misc', function () {
 	describe('OLSKWebViewTail', function test_OLSKWebViewTail () {
 
 		it('classes OLSKToolbar', function () {
-			browser.assert.hasClass(OLSKWebViewTail, 'OLSKToolbar');
+			return browser.assert.hasClass(OLSKWebViewTail, 'OLSKToolbar');
 		});
 
 		it('classes OLSKCommonEdgeTop', function () {
-			browser.assert.hasClass(OLSKWebViewTail, 'OLSKCommonEdgeTop');
+			return browser.assert.hasClass(OLSKWebViewTail, 'OLSKCommonEdgeTop');
 		});
 
 	});
@@ -55,11 +55,11 @@ describe('OLSKWebView_Misc', function () {
 	describe('OLSKWebViewWindowButton', function test_OLSKWebViewWindowButton () {
 
 		it('sets target', function () {
-			browser.assert.attribute(OLSKWebViewWindowButton, 'target', '_blank');
+			return browser.assert.attribute(OLSKWebViewWindowButton, 'target', '_blank');
 		});
 
 		it('sets href', function () {
-			browser.assert.attribute(OLSKWebViewWindowButton, 'href', OLSKWebViewURL);
+			return browser.assert.attribute(OLSKWebViewWindowButton, 'href', OLSKWebViewURL);
 		});
 
 	});

@@ -19,7 +19,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 
 		it('localizes OLSKWebViewWindowButton', function() {
-			browser.assert.text(OLSKWebViewWindowButton, uLocalized('OLSKWebViewWindowButtonText'));
+			return browser.assert.text(OLSKWebViewWindowButton, uLocalized('OLSKWebViewWindowButtonText'));
 		});
 	
 	});

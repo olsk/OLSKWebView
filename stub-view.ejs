@@ -22,3 +22,10 @@ window._OLSKWebView = new Main({
 <button id="TestOLSKModalViewShow" onclick="_OLSKWebView.modPublic.OLSKModalViewShow()">TestOLSKModalViewShow</button>
 
 <button id="TestOLSKModalViewClose" onclick="_OLSKWebView.modPublic.OLSKModalViewClose()">TestOLSKModalViewClose</button>
+
+<style type="text/css">
+/* enables playwright to touch the close button */
+.OLSKModalViewOverlay {
+	top: 50px !important;
+}
+</style>

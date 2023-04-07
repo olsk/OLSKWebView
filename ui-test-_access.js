@@ -18,7 +18,7 @@ describe('OLSKWebView_Access', function () {
 	});
 
 	it('hides OLSKWebView', function () {
-		browser.assert.elements(OLSKWebView, 0);
+		return browser.assert.elements(OLSKWebView, 0);
 	});
 
 	context('OLSKModalViewShow', function () {
@@ -28,23 +28,23 @@ describe('OLSKWebView_Access', function () {
 		});
 		
 		it('shows OLSKWebView', function () {
-			browser.assert.elements(OLSKWebView, 1);
+			return browser.assert.elements(OLSKWebView, 1);
 		});
 
 		it('shows OLSKStandardView', function () {
-			browser.assert.elements('.OLSKStandardView', 1);
+			return browser.assert.elements('.OLSKStandardView', 1);
 		});
 
 		it('shows OLSKWebViewFrame', function () {
-			browser.assert.elements(OLSKWebViewFrame, 1);
+			return browser.assert.elements(OLSKWebViewFrame, 1);
 		});
 
 		it('shows OLSKWebViewTail', function () {
-			browser.assert.elements(OLSKWebViewTail, 1);
+			return browser.assert.elements(OLSKWebViewTail, 1);
 		});
 
 		it('shows OLSKWebViewWindowButton', function () {
-			browser.assert.elements(OLSKWebViewWindowButton, 1);
+			return browser.assert.elements(OLSKWebViewWindowButton, 1);
 		});
 
 	});
@@ -56,7 +56,7 @@ describe('OLSKWebView_Access', function () {
 		});
 
 		it('hides OLSKWebView', function () {
-			browser.assert.elements(OLSKWebView, 0);
+			return browser.assert.elements(OLSKWebView, 0);
 		});
 		
 	});
